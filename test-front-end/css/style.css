@@ -1,0 +1,607 @@
+@charset "UTF-8";
+
+/* latin-ext */
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/poppins/v21/pxiEyp8kv8JHgFVrJJnecmNE.woff2) format('woff2');
+    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+  /* latin */
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/poppins/v21/pxiEyp8kv8JHgFVrJJfecg.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+  /* latin-ext */
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/poppins/v21/pxiByp8kv8JHgFVrLGT9Z1JlFc-K.woff2) format('woff2');
+    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+  /* latin */
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/poppins/v21/pxiByp8kv8JHgFVrLGT9Z1xlFQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+  /* latin-ext */
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/poppins/v21/pxiByp8kv8JHgFVrLEj6Z1JlFc-K.woff2) format('woff2');
+    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+  /* latin */
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/poppins/v21/pxiByp8kv8JHgFVrLEj6Z1xlFQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+  /* latin-ext */
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/poppins/v21/pxiByp8kv8JHgFVrLCz7Z1JlFc-K.woff2) format('woff2');
+    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+  /* latin */
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/poppins/v21/pxiByp8kv8JHgFVrLCz7Z1xlFQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #111317;
+    background-image: 
+    radial-gradient(circle at 20% 20%, rgba(215, 148, 71, 0.1), transparent 18%),
+    radial-gradient(circle at 90% 75%, rgba(215, 148, 71, 0.1), transparent 12%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120vh;
+    overflow-x: hidden;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+
+
+/* Estilos para o cabeçalho */
+.nav-principal {
+    padding: 15px 20px;
+}
+
+/* Alinhamento da logo e menu */
+.nav-principal-container {
+    display: flex;
+    align-items: center; 
+    justify-content: flex-start; 
+}
+
+/* Estilos para a logo */
+.nav-logo img {
+   padding: 1.5rem 20rem;
+}
+
+/* Alinhamento a esquerda */
+.nav-menu {
+    margin-left: -100px;
+}
+
+/* Estilos do menu */
+.nav-menu ul {
+    display: flex; 
+    gap: 55px; 
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu ul li a {
+    position: relative;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Linha animada abaixo do link */
+.nav-menu ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0; 
+    height: 2px; 
+    background: #f9ac54; 
+    transition: width 0.3s ease-in-out; 
+}
+
+.nav-menu ul li a:hover::after {
+    width: 70%; 
+}
+
+/* Estilo do botão */
+.nav-botao button {
+    background: #f9ac54;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-left: 150px;
+    width: 105px;
+    height: 45px;
+    cursor: pointer;
+}
+
+.nav-botao button:hover {
+    background: #d79447;
+}
+
+
+/*Seção peincipal do site*/
+.secao-destaque {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    margin-left: -300px;
+    margin-bottom: 150px;
+}
+
+.secao-titulo {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 20rem;
+    margin-top: -80px;
+}
+
+.secao-destaque h2 {
+    font-size: 16px;
+    color: #f9ac54;
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+.secao-destaque h1 {
+    font-size: 75px;
+    text-transform: uppercase;
+    width: 530px;
+    padding: 15px;
+    color: #ffffff;
+}
+
+.secao-destaque p {
+    color: #ffffff;
+    padding: 20px;
+    width: 600px;
+}
+
+.secao-botao {
+   padding: 20px;
+}
+
+.secao-botao button {
+    background: #f9ac54;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    width: 145px;
+    height: 45px;
+    cursor: pointer;
+}
+
+.secao-botao button:hover {
+    background: #d79447;
+}
+
+
+.cor {
+    color: #111317;
+    -webkit-text-stroke: 1px #ffffff;
+    
+}
+
+.secao-sobreposta img {
+    width: 400px;
+    position: relative;
+    margin-left: -80px;
+    z-index: 2;
+}
+
+.background-text {
+    position: absolute;
+    font-size: 35rem;
+    font-weight: 500;
+    color: rgba(215, 148, 71, 0.1); 
+    top: 50%;
+    left: 50%;
+    transform: translate(50%, -65%);
+    z-index: 1; 
+}
+
+.texto-background {
+    position: absolute;
+    font-size: 12rem; 
+    font-weight: 600;
+    color: #35373b; 
+    bottom: 10%; 
+    left: 50%;
+    transform: translate(-45%, -14px);
+    z-index: 1; 
+}
+
+/* Seção do explorar nosso programa */
+.principal-explorar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 22.5rem;
+    margin-right: 22.5rem;
+}
+
+.principal-explorar h2 {
+    font-size: 32px;
+    color: #ffffff;
+}
+
+
+
+.setas button {
+    background: none;
+    border: none;
+    margin-left: 20px;
+}
+
+.setas i {
+    font-size: 32px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.setas i:hover {
+    color: #d79447;
+}
+
+.caixa-programa {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5rem 10rem;
+    gap: 50px;
+}
+
+.caixa-1 {
+    background: #1f2125;
+    border-radius: 5px;
+    width: 400px;
+    height: 300px;
+    border: 2px solid #1f2125;
+    transition: 0.5s ease;
+}
+
+.caixa-1:hover {
+    border-color: #d79447;
+    transform: scale(1.02);
+}
+
+.caixa-2 {
+    background: #1f2125;
+    border-radius: 5px;
+    width: 400px;
+    height: 300px;
+    border: 2px solid #1f2125;
+    transition: 0.5s ease;
+}
+
+.caixa-2:hover {
+    border-color: #d79447;
+    transform: scale(1.02);
+}
+
+.caixa-3 {
+    background: #1f2125;
+    border-radius: 5px;
+    width: 400px;
+    height: 300px;
+    border: 2px solid #1f2125;
+    transition: 0.5s ease;
+}
+
+.caixa-3:hover {
+    border-color: #d79447;
+    transform: scale(1.02);
+}
+
+.caixa-4 {
+    background: #1f2125;
+    border-radius: 5px;
+    width: 400px;
+    height: 300px;
+    border: 2px solid #1f2125;
+    transition: 0.5s ease;
+}
+
+.caixa-4:hover {
+    border-color: #d79447;
+    transform: scale(1.02);
+}
+
+.caixa-1-img {
+    padding: 1.5rem 1.5rem 0.5rem;
+}
+
+.caixa-1 h3{
+    color: #ffffff;
+    font-size: 20px;
+    padding: 0.1rem 1.5rem 0.5rem;
+}
+
+.caixa-1 p{
+    color: #d1d5db;
+    font-size: 16px;
+    padding: 0.5rem 1.5rem 1rem;
+    width: 300px;
+}
+
+.botao-caixa {
+    padding: 0.5rem 1.5rem 1rem;
+}
+
+.caixa-1 button {
+    background: none;
+    border: none;
+    font-size: 16px;
+}
+
+.caixa-1 a:hover {
+    color: #d79447;
+}
+
+.caixa-1 i {
+    font-size: 18px;
+}
+
+.caixa-2-img {
+    padding: 1.5rem 1.5rem 0.5rem;
+}
+
+.caixa-2 h3{
+    color: #ffffff;
+    font-size: 20px;
+    padding: 0.1rem 1.5rem 0.5rem;
+}
+
+.caixa-2 p{
+    color: #d1d5db;
+    font-size: 16px;
+    padding: 0.5rem 1.5rem 1rem;
+    width: 300px;
+}
+
+.botao-caixa {
+    padding: 0.5rem 1.5rem 1rem;
+}
+
+.caixa-2 button {
+    background: none;
+    border: none;
+    font-size: 16px;
+}
+
+.caixa-2 a:hover {
+    color: #d79447;
+}
+
+.caixa-2 i {
+    font-size: 18px;
+}
+
+.caixa-3-img {
+    padding: 1.5rem 1.5rem 0.5rem;
+}
+
+.caixa-3 h3{
+    color: #ffffff;
+    font-size: 20px;
+    padding: 0.1rem 1.5rem 0.5rem;
+}
+
+.caixa-3 p{
+    color: #d1d5db;
+    font-size: 16px;
+    padding: 0.5rem 1.5rem 1rem;
+    width: 300px;
+}
+
+.botao-caixa {
+    padding: 0.5rem 1.5rem 1rem;
+}
+
+.caixa-3 button {
+    background: none;
+    border: none;
+    font-size: 16px;
+}
+
+.caixa-3 a:hover {
+    color: #d79447;
+}
+
+.caixa-3 i {
+    font-size: 18px;
+}
+
+.caixa-4-img {
+    padding: 1.5rem 1.5rem 0.5rem;
+}
+
+.caixa-4 h3{
+    color: #ffffff;
+    font-size: 20px;
+    padding: 0.1rem 1.5rem 0.5rem;
+}
+
+.caixa-4 p{
+    color: #d1d5db;
+    font-size: 16px;
+    padding: 0.5rem 1.5rem 1rem;
+    width: 300px;
+}
+
+.botao-caixa {
+    padding: 0.5rem 1.5rem 1rem;
+}
+
+.caixa-4 button {
+    background: none;
+    border: none;
+    font-size: 16px;
+}
+
+.caixa-4 a:hover {
+    color: #d79447;
+}
+
+.caixa-4 i {
+    font-size: 18px;
+}
+
+.Aulas-container {
+    display: flex; 
+    align-items: center; 
+    flex: 1;
+}
+
+
+.aula-img {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 30rem;
+}
+
+.aula-corda {
+    width: 450px;
+    border-radius: 10px;
+    position: absolute;
+    font-size: 35rem;
+    font-weight: 500;
+    color: rgba(215, 148, 71, 0.1); 
+    transform: translate(10%, 15%);
+    z-index: 1;
+}
+
+.aula-biceps {
+    width: 250px;
+    border-radius: 10px;
+    position: relative;
+    margin-top: 277px;
+    z-index: 2;
+}
+
+.aulas-principal {
+    margin-left: -180px; 
+}
+
+.aulas-principal h2 {
+    font-size: 32px;
+    color: #ffffff;
+    width: 300px;
+
+}
+
+.aulas-principal p {
+    color: #ffffff;
+    width: 580px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.botao-aulas {
+    background: #f9ac54;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    width: 145px;
+    height: 45px;
+    cursor: pointer;
+}
+
+.botao-aulas:hover {
+    background: #d79447;
+}
+
+.beneficios-programas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.beneficios-programas h2 {
+    color: #ffffff;
+    font-size: 32px;   
+    margin-bottom: 20px;
+}
+
+.beneficios-programas p {
+    color: #ffffff;
+    font-size: 16px;
+    width: 550px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.img-beneficios img {
+    border-radius: 10px;
+    width: 1300px;
+}
+
+.cixa-beneficios {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #1f2125;
+    border-radius: 10px;
+    width: 1200px;
+    margin-top: -70px;
+}
+
+.benefícios-1 {
+    display: flex;
+    flex-direction: row;
+}
+
